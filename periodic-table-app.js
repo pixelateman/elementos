@@ -161,7 +161,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: clamp(14px, 2.2vw, 30px);
+            font-size: clamp(15px, 2vw, 28px);
             width: 100%;
             height: 100%;
             font-family: sans-serif;
@@ -2373,14 +2373,24 @@
               ". . . . . . . . . . . . . . . . . .";
           }
 
+          .grid-spacer {
+            display: none;
+            grid-area: p;
+          }
+
           @media (max-width: 900px) {
             #mobile-detail-slot {
               display: block;
             }
 
+            .grid-spacer {
+              display: block;
+            }
+
             .table-container {
-              min-width: 820px;
-              height: 460px;
+              min-width: 760px;
+              height: 430px;
+              gap: 4px;
               padding: 0 8px;
               box-sizing: border-box;
             }
@@ -2461,6 +2471,7 @@
 
         <div class="table-scroll-wrapper">
         <div class="table-container" id="table-container">
+          <div class="grid-spacer"></div>
           <div class="item"><div class="index">A I</div></div>
           <div class="item"></div>
           <div class="item"></div>
