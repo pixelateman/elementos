@@ -1,0 +1,16 @@
+{
+  "name": "Elementos",
+  "short_name": "Elementos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#2d4c2b",
+  "theme_color": "#2d4c2b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icono.png",
+      "sizes": "480x480",
+      "type": "image/png"
+    }
+  ]
+}
